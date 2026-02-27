@@ -32,6 +32,12 @@ body {
     border: none;
 }
 
+.container-1{
+  max-width: 1400px;
+  margin: auto;
+}
+
+
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(3, 127, 3); 
@@ -66,6 +72,7 @@ ul{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); 
     border-bottom: 2px solid #092037; 
+    direction: rtl;
 }
 
 .logo {
@@ -95,7 +102,7 @@ ul{
 
 .navbar ul li a {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 500;
     margin: 0 10px;
     transition: all 0.3s ease;
@@ -190,5 +197,30 @@ ul{
 
 
 /* Home Start */
+
+#home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+#home .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home .row .col h1{
+  font-size: ;
+}
+
+#home .row img{
+  max-width:30%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
 
 /* Home End */
