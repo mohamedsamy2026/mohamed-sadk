@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: green; 
+    background: rgb(0, 58, 128); 
     border-radius: 10px;
     width: 10px;
     border: none;
@@ -333,3 +334,186 @@ ul{
 
 
 /* Home End */
+
+
+
+/* About Start */
+
+#about {
+    padding: 100px 10%;
+    background-color: #030d38; 
+    color: white;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 55px;
+    margin-bottom: 60px;
+    font-weight: 800;
+    color: white;
+}
+
+.section-title span {
+    color: #00d4ff;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 212, 255, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.about-card i {
+    font-size: 50px;
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.about-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #dae2ed;
+}
+
+.about-card:hover {
+    transform: translateY(-15px); 
+    background: rgba(0, 212, 255, 0.08); 
+    border-color: #00d4ff;
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.25), 
+     0 0 15px rgba(0, 212, 255, 0.1); 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.8s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+/* About End */
+
+
+/* Expertise Start */
+
+#experience-fields {
+    padding: 100px 10%;
+    background-color: #020617; 
+    text-align: center;
+}
+
+.section-subtitle {
+    color: #ebf0f7;
+    margin-top: -40px;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+    font-size: 19px;
+}
+
+
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.exp-card {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    padding: 40px 30px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    cursor: pointer;
+}
+
+.exp-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(0, 212, 255, 0.1);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: 0.4s;
+}
+
+.exp-icon i {
+    font-size: 32px;
+    color: #00d4ff;
+}
+
+.exp-card h3 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.exp-card p {
+    color: #e7ebef;
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.exp-tag {
+    background: rgba(3, 167, 199, 0.1);
+    color: #ffffff;
+    padding: 10px 17px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid rgba(0, 212, 255, 0.3);
+}
+
+.exp-card:hover {
+    transform: translateY(-15px);
+    border-color: #00d4ff;
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.15);
+}
+
+.exp-card:hover .exp-icon {
+    background: #00d4ff;
+    transform: rotateY(360deg);
+}
+
+.exp-card:hover .exp-icon i {
+    color: #020617;
+}
+
+@media (max-width: 768px) {
+    #experience-fields {
+        padding: 60px 5%;
+    }
+}
+
+/* Expertise End */
